@@ -185,7 +185,7 @@ export default function Home() {
           className="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm"
         >
           <h2 className="mb-4 text-lg font-medium text-zinc-900">
-            Nuevo producto
+             Nuevo producto
           </h2>
           <div className="grid gap-4 sm:grid-cols-3">
             <input
