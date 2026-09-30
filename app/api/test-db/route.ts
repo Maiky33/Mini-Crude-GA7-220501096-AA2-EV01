@@ -9,12 +9,13 @@ export async function GET() {
       products,
     });
   } catch (error) {
-    console.error(error);
+    console.error("PRISMA ERROR:", error);
 
     return Response.json(
       {
         success: false,
         message: "Error al conectar con la base de datos",
+        error: error instanceof Error ? error.message : String(error),
       },
       { status: 500 }
     );
